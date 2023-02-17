@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importo il font prima di legare il file al css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importo il css con un file "general" che stabilisce modifiche globali e template (utile anche per conservare regole di design) ed uno standard "style" che mi fa rifinire stilisticamente il file -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>GreatTaste</title>
+  </head>
+  <body>
+    <!-- Left with the idea of a "quote of the day"/rotation of quotes mindset -->
+    <p class="quote">Healthy mind in a healthy body - Juvenal</p>
+    <!-- Imposto un Header  di 3 componenti distinte da mettere a posto con flexbox poiché mi permette la funzionalità space-between
+    Componenti: 
+    Logo cliccabile
+    Nav bar
+    Search & Cart-button
+   -->
+    <header class="header">
+      <a href="#">
+        <img src="/img/Logo/cover.png" alt="GreatTaste" class="logo" />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">Shop</a></li>
+          <li><a class="main-nav-link" href="#">Blog</a></li>
+          <li><a class="main-nav-link" href="#">Our mission</a></li>
+          <li><a class="main-nav-link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="search-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn--full" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="cart-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <!-- Ho generalizzato il contenitore di sezione con i template che seguono "hero" in modo da riusarli per tutta la pagina -->
+        <div class="hero container grid grid--2-cols grid--center-v">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              It pays to be the best version of yourself
+            </h1>
+            <p class="hero-description">A mountain is climbed step by step</p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Start feeling Great</a
+            >
+            <a href="#" class="btn btn--outline">Learn More &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="/img/Hero/Cow-in-the-grass.jpg"
+              alt="Nice looking girl in partial red"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-products">
+        <div class="container">
+          <span class="subheading">Start feeling better</span>
+          <h2 class="heading-secondary">
+            The first 3 steps in your Health journey
+          </h2>
+        </div>
+
+        <!-- Step 01 -->
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Grass Fed Beef Liver</h3>
+            <p class="step-description">
+              One of the most dense sources of nutrition on the planet, our
+              supplement aids the liver in optimizing the body's metabolic
+              functions, helps detoxify the body, and is integral to supporting
+              a healthy immune system.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/Z-Layout/Ancestral-beef-liver/GrassFedBeefLiver.webp"
+              alt="grassfed beef liver supplement"
+              class="step-img"
+            />
+          </div>
+          <!-- Step 02 -->
+          <div class="step-img-box">
+            <img
+              src="img/Z-Layout/Ancestral-beef-liver/GrassFedBeefLiver1.webp"
+              alt="grassfed beef liver supplement"
+              class="step-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Grass Fed Beef Liver</h3>
+            <p class="step-description">
+              One of the most dense sources of nutrition on the planet, our
+              supplement aids the liver in optimizing the body's metabolic
+              functions, helps detoxify the body, and is integral to supporting
+              a healthy immune system.
+            </p>
+          </div>
+          <!-- Step 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Grass Fed Beef Liver</h3>
+            <p class="step-description">
+              One of the most dense sources of nutrition on the planet, our
+              supplement aids the liver in optimizing the body's metabolic
+              functions, helps detoxify the body, and is integral to supporting
+              a healthy immune system.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/Z-Layout/Ancestral-beef-liver/GrassFedBeefLiver2.webp"
+              alt="grassfed beef liver supplement"
+              class="step-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h3 class="heading-tertiary">Improve your health</h3>
+        <div class="container card-container">
+          <a class="card link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              />
+            </svg>
+            <h3 class="heading-tertiary">Energy & Performance</h3>
+            <p class="card-description">
+              Improve training intensity, muscle growth and strength
+            </p>
+          </a>
+          <a class="card link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              />
+            </svg>
+            <h3 class="heading-tertiary">Boost Cognitive funtion</h3>
+            <p class="card-description">
+              Improve training intensity, muscle growth and strength
+            </p>
+          </a>
+          <a class="card link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="card-svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+              />
+            </svg>
+            <h3 class="heading-tertiary">Weight Loss</h3>
+            <p class="card-description">
+              Improve training intensity, muscle growth and strength
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="GreaTaste Logo" src="img/Logo/cover.png" />
+            </a>
+
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+
+            <p class="copyright">
+              Copyright &copy; 2023 by GreaTaste, Inc. All rights reserved.
+            </p>
+          </div>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+                ><br />
+                <a class="footer-link" href="mailto:GreaTaste@gmail.com"
+                  >GreaTaste@gmail.com</a
+                >
+              </p>
+            </address>
+          </div>
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Create account</a></li>
+              <li><a class="footer-link" href="#">Sign in</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Recipe directory </a></li>
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+          <form class="cta-form" action="#">
+            <div>
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+            <button class="btn btn--form">Sign up now</button>
+          </form>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
